@@ -5,6 +5,7 @@ import Image from 'next/image';
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Navbar = () => {
   // State for mobile menu toggle
@@ -19,6 +20,7 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <div className={`md:flex hidden text-white gap-4 lg:gap-7 text-sm lg:text-base`}>
+        
         <h2 className='cursor-pointer hover:text-yellow-500'>Home</h2>
         <h2 className='cursor-pointer hover:text-yellow-500'>Menu</h2>
         <h2 className='cursor-pointer hover:text-yellow-500'>Blog</h2>
@@ -47,14 +49,18 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
-        <div className='absolute top-[90px] left-0 w-full bg-[#0D0D0D] text-white flex flex-col items-center py-5 gap-4 z-10'>
-          <h2 className='cursor-pointer hover:text-yellow-500'>Home</h2>
-          <h2 className='cursor-pointer hover:text-yellow-500'>Menu</h2>
-          <h2 className='cursor-pointer hover:text-yellow-500'>Blog</h2>
-          <h2 className='cursor-pointer hover:text-yellow-500'>Pages</h2>
-          <h2 className='cursor-pointer hover:text-yellow-500'>About</h2>
-          <h2 className='cursor-pointer hover:text-yellow-500'>Shop</h2>
-          <h2 className='cursor-pointer hover:text-yellow-500'>Contact</h2>
+        <div className="absolute top-[90px] left-0 w-full bg-[#0D0D0D] text-white flex flex-col items-center py-5 gap-4 z-10">
+          {/* Close Button */}
+          <button onClick={() => setIsMenuOpen(false)}>
+            <CloseIcon />
+          </button>
+          <h2 className="cursor-pointer hover:text-yellow-500">Home</h2>
+          <h2 className="cursor-pointer hover:text-yellow-500">Menu</h2>
+          <h2 className="cursor-pointer hover:text-yellow-500">Blog</h2>
+          <h2 className="cursor-pointer hover:text-yellow-500">Pages</h2>
+          <h2 className="cursor-pointer hover:text-yellow-500">About</h2>
+          <h2 className="cursor-pointer hover:text-yellow-500">Shop</h2>
+          <h2 className="cursor-pointer hover:text-yellow-500">Contact</h2>
         </div>
       )}
     </div>
