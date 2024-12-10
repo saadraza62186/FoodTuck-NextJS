@@ -17,7 +17,7 @@ const Section5 = () => {
 
       {/* Coffee Card Section */}
       <div className="mb-16">
-        <CoffeeCard Image="/cheez.png" />
+        <CoffeeCard imageSrc="/cheez.png" />
       </div>
 
       {/* Comment Card Section */}
@@ -49,7 +49,7 @@ const Section5 = () => {
 
       {/* Coffee Card Section for "Esperesso" */}
       <div className="mb-16">
-        <CoffeeCard Image="/pizza1.png" />
+        <CoffeeCard imageSrc="/pizza1.png" />
       </div>
 
       {/* Label Section for "Arabica" */}

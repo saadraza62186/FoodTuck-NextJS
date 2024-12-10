@@ -6,7 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import CloseIcon from '@mui/icons-material/Close';
-
+import Link from 'next/link';
 const Navbar = () => {
   // State for mobile menu toggle
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,8 +20,9 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <div className={`md:flex hidden text-white gap-4 lg:gap-7 text-sm lg:text-base`}>
-        
-        <h2 className='cursor-pointer hover:text-yellow-500'>Home</h2>
+      <Link href="/blog" legacyBehavior>
+      <h2 className="cursor-pointer hover:text-yellow-500">Home</h2>
+    </Link>
         <h2 className='cursor-pointer hover:text-yellow-500'>Menu</h2>
         <h2 className='cursor-pointer hover:text-yellow-500'>Blog</h2>
         <h2 className='cursor-pointer hover:text-yellow-500'>Pages</h2>

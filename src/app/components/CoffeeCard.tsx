@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-
-const CoffeeCard = ({ Image }: { Image: string }) => {
+import Image from "next/image";
+const CoffeeCard = ({ imageSrc}: any) => {
   // State to manage duplicates
   const [showDuplicate, setShowDuplicate] = useState(false);
 
@@ -21,12 +21,14 @@ const CoffeeCard = ({ Image }: { Image: string }) => {
       {/* Original Card */}
       <div className="w-full max-w-sm mx-auto lg:mx-0 bg-white rounded-lg shadow-lg overflow-hidden dark:bg-slate-800">
         {/* Image */}
-        <img
-          src={Image}
-          alt="Cup of coffee"
-          className="w-full h-48 object-cover sm:h-56 md:h-64"
-        />
-
+        <Image
+        src={imageSrc} // Ye image ka path hoga (file ya URL)
+        alt="Cup of coffee"
+        className="w-full h-48 object-cover sm:h-56 md:h-64"
+        width={500} // Specify width of the image
+        height={400} // Specify height of the image
+        quality={100} // For higher quality (0 to 100)
+      />
         {/* Content */}
         <div className="p-4 sm:p-6">
           {/* Date and Author */}
@@ -56,8 +58,10 @@ const CoffeeCard = ({ Image }: { Image: string }) => {
       {/* Duplicate Card */}
       {showDuplicate && (
         <div className="w-full max-w-sm mx-auto lg:mx-0 bg-white rounded-lg shadow-lg overflow-hidden dark:bg-slate-800">
-          <img
-            src={Image}
+          <Image
+          width={100}
+          height={100}
+            src={imageSrc}
             alt="Cup of coffee"
             className="w-full h-48 object-cover sm:h-56 md:h-64"
           />

@@ -25,7 +25,7 @@ const Section3 = () => {
 
       {/* CoffeeCard 1 */}
       <div className="mt-6 lg:mt-10">
-        <CoffeeCard Image="/cake1.png" />
+        <CoffeeCard imageSrc="/cake1.png" />
       </div>
 
       {/* Food Information */}
@@ -38,7 +38,7 @@ const Section3 = () => {
 
       {/* CoffeeCard 2 */}
       <div className="mt-6 lg:mt-10">
-        <CoffeeCard Image="/coffee.png" />
+        <CoffeeCard imageSrc="/coffee.png" />
       </div>
       <div className="md:flex md:justify-between">
       <div className="flex mt-[50px]">
@@ -98,7 +98,7 @@ const Section3 = () => {
 
           {/* CoffeeCard 1 */}
           <div className="mt-6 lg:mt-[40px]">
-            <CoffeeCard Image="/cake1.png" />
+            <CoffeeCard imageSrc="/cake1.png" />
           </div>
         </div>
       )}

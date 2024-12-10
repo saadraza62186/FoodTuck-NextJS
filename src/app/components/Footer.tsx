@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="text-white mb-4 md:mb-0 md:mt-3 text-center md:text-left">
           <h1 className="text-[17px] font-bold">Still You Need Our Support?</h1>
           <p className="text-[14px]">
-            Don't wait, make a smart & logical quote here. It's pretty easy.
+            Don&rsquo;t wait, make a smart & logical quote here. It&rsquo;s pretty easy.
           </p>
         </div>
 
