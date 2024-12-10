@@ -23,12 +23,15 @@ const Items = () => {
       {/* Partners/Clients Row */}
       <div className="flex justify-center items-center space-x-8 px-6 max-w-7xl mx-auto overflow-x-auto">
         {clients.map((client) => (
-          <div key={client.id} className="flex justify-center items-center">
+          <div
+            key={client.id}
+            className="flex justify-center items-center flex-shrink-0"
+          >
             <Image
               src={client.src}
               alt={client.alt}
-              width={120}  // Reduced image size
-              height={80}  // Reduced image size
+              width={120} // Reduced image size
+              height={80} // Reduced image size
               className="object-contain"
             />
           </div>

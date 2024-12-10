@@ -31,16 +31,17 @@ const Section5 = () => {
       </div>
 
       {/* Alder Grilled Chinook Salmoon Section */}
-      <div className="border w-full max-w-[900px] mx-auto mt-7">
-        <div className="flex justify-between items-center px-3 py-3">
-          <h1 className="font-bold">Alder Grilled Chinook Salmoon</h1>
-          <p className="text-[#FF9F0D]">$32</p>
-        </div>
-        <div className="px-3 mt-4">
-          <p className="font-extralight">Toasted French bread topped with romano, cheddar</p>
-          <p className="font-extralight">550 CAL</p>
-        </div>
-      </div>
+      <div className="border w-full max-w-[900px] mx-auto mt-7 p-4 sm:p-6">
+  <div className="flex justify-between items-center px-3 py-3">
+    <h1 className="font-bold text-lg sm:text-xl md:text-2xl">Alder Grilled Chinook Salmon</h1>
+    <p className="text-[#FF9F0D] text-lg sm:text-xl">$32</p>
+  </div>
+  <div className="px-3 mt-4">
+    <p className="font-extralight text-sm sm:text-base">Toasted French bread topped with romano, cheddar</p>
+    <p className="font-extralight text-sm sm:text-base">550 CAL</p>
+  </div>
+</div>
+
 
       {/* Label Section for "Esperesso" */}
       <div className="mb-10 mt-16">

@@ -17,25 +17,27 @@ const Section6 = () => {
   return (
     <div>
       <div>
-  <div className="flex flex-wrap gap-5 text-2xl ml-[60px] mt-[40px] justify-center md:justify-start">
-    <PinterestIcon />
-    <FacebookIcon />
-    <TwitterIcon />
-    <InstagramIcon />
-    <YouTubeIcon />
-  </div>
-</div>
+        <div className="flex flex-wrap gap-5 text-2xl ml-[60px] mt-[40px] justify-center md:justify-start">
+          <PinterestIcon />
+          <FacebookIcon />
+          <TwitterIcon />
+          <InstagramIcon />
+          <YouTubeIcon />
+        </div>
+      </div>
 
       <div>
-        <div className="ml-[30px]">
+        <div className="ml-[30px] md:mr-[770px]">
           <ComboBox name="Default" />
         </div>
-        <div className="ml-[30px]">
+        <div className="ml-[30px] md:mr-[770px]">
           <ComboBox name="Newest" />
         </div>
-        <div className="flex gap-3 ml-[50px]">
-          <input type="checkbox" name="" id="" className="w-5 h-5" />
-          <p>Sandwiches</p>
+        <div className="flex items-center gap-3 ml-[50px] md:mt-4 mt-4">
+          <input type="checkbox" id="sandwiches" className="w-5 h-5" />
+          <label htmlFor="sandwiches" className="text-sm text-gray-700">
+            Sandwiches
+          </label>
         </div>
       </div>
       <div className="mt-[40px] ml-[30px]">
