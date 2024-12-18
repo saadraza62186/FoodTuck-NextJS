@@ -1,31 +1,28 @@
-import React from "react";
-import Image from "next/image";
-
-const MiniCard = () => {
+import React from 'react'
+import Image from 'next/image'
+const MiniCard = ({imageSrc, name, description, price} : any) => {
   return (
-    <div className="w-[312px] h-[309px] bg-white rounded-lg shadow-md overflow-hidden sm:w-[280px] sm:h-[300px] md:w-[320px] md:h-[330px]">
-      {/* Image Section */}
-      <div className="w-full h-[217px] relative">
-        <Image
-          src="/bean.png" // Replace with your image source
-          alt="Coffee Beans"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
-
-      {/* Text and Rating Section */}
-      <div className="flex justify-between items-center px-4 py-2">
-        <p className="text-gray-800 text-sm">Coffee Beans</p>
-        <p className="text-yellow-500">⭐⭐⭐⭐☆</p>
-      </div>
-
-      {/* Price Section */}
-      <div className="px-4 py-2">
-        <p className="text-xl font-semibold text-gray-800">$43.78</p>
-      </div>
+    <div className='w-[376px] h-[79px] flex gap-1'>
+        <div className='w-[80px] h-[79px]'>
+            <Image src={imageSrc} alt={name} width={322} height={194}/>
+        </div>
+        <div className='w-[290px] h-[79px] flex flex-col gap-1'>
+            <div className='font-bold text-xl text-[#FFFFFF]'>
+                <h1>{name}</h1>
+            </div>
+            <div className='font-normal text-[14px] text-[#FFFFFF]'>
+                <h1>
+                {description}
+                </h1>
+            </div>
+            <div className='font-bold text-[18px] text-[#FF9F0D]'>
+                <h1>
+                {price}
+                </h1>
+            </div>
+        </div>
     </div>
-  );
-};
+  )
+}
 
-export default MiniCard;
+export default MiniCard

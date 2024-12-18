@@ -1,92 +1,17 @@
-import React from "react";
-import Label from "./Label";
-import CoffeeCard from "./CoffeeCard";
-import CommentCard from "./CommentCard";
-import SmallCard from "./SmallCard";
-import Image from "next/image";
-import Items from "./Items";
-import MiniCard from "./MiniCard";
+import React from 'react'
+import Reciepie from './Reciepie'
 
 const Section5 = () => {
   return (
-    <div className="container mx-auto px-4">
-      {/* Label Section */}
-      <div className="mb-10">
-        <Label name="Americano" imageSrc="/tea.png" />
-      </div>
-
-      {/* Coffee Card Section */}
-      <div className="mb-16">
-        <CoffeeCard imageSrc="/cheez.png" />
-      </div>
-
-      {/* Comment Card Section */}
-      <div className="flex justify-center mb-10">
-        <CommentCard Image1="/commenticon.png" Image2="/commentphoto.png" />
-      </div>
-
-      {/* Small Card Section */}
-      <div className="mb-10">
-        <SmallCard imagesrc="/salmoon.png" title="ssss" description="12.2" />
-      </div>
-
-      {/* Alder Grilled Chinook Salmoon Section */}
-      <div className="border w-full max-w-[900px] mx-auto mt-7 p-4 sm:p-6">
-  <div className="flex justify-between items-center px-3 py-3">
-    <h1 className="font-bold text-lg sm:text-xl md:text-2xl">Alder Grilled Chinook Salmon</h1>
-    <p className="text-[#FF9F0D] text-lg sm:text-xl">$32</p>
-  </div>
-  <div className="px-3 mt-4">
-    <p className="font-extralight text-sm sm:text-base">Toasted French bread topped with romano, cheddar</p>
-    <p className="font-extralight text-sm sm:text-base">550 CAL</p>
-  </div>
-</div>
-
-
-      {/* Label Section for "Esperesso" */}
-      <div className="mb-10 mt-16">
-        <Label name="Esperesso" imageSrc="/peanut.png" />
-      </div>
-
-      {/* Coffee Card Section for "Esperesso" */}
-      <div className="mb-16">
-        <CoffeeCard imageSrc="/pizza1.png" />
-      </div>
-
-      {/* Label Section for "Arabica" */}
-      <div className="mb-10">
-        <Label name="Arabica" imageSrc="/mug2.png" />
-      </div>
-
-      {/* Items Grid Section */}
-      <div className="mb-16">
-        <Items />
-      </div>
-
-      {/* Label Section for "Coffee stimy" */}
-      <div className="mb-10">
-        <Label name="Coffee stimy" imageSrc="/tea2.png" />
-      </div>
-
-      {/* Mini Card Section */}
-      <div className="mb-10 md:ml-[40px]">
-        <MiniCard />
-      </div>
-
-      {/* Fast Delivery and Coffee stimy Label Sections */}
-      <div className="md:flex md:justify-between md:gap-[90px] sm:grid sm:grid-cols-1 md:grid-cols-3 mt-10">
-        <div className="mb-6 sm:mb-0">
-          <Label name="Fast Delivery" imageSrc="/truck.png" />
+    <div className='w-[1920px] h-[469px] bg-[#0D0D0DF2] '>
+        <div className='w-[1920px] h-[469px] flex ml-[300px] gap-[170px]'>
+            <Reciepie imageSrc = "/food14.png" name = "Professional Chefs" items = "420"/>
+            <Reciepie imageSrc = "/food15.png" name = "Items Of Food" items = "320"/>
+            <Reciepie imageSrc = "/food16.png" name = "Years Of Experienced" items = "30+"/>
+            <Reciepie imageSrc = "/food17.png" name = "Happy Customers" items = "220"/>
         </div>
-        <div className="mb-6 sm:mb-0">
-          <Label name="Coffee stimy" imageSrc="/bag.png" />
-        </div>
-        <div className="mb-6 sm:mb-0">
-          <Label name="Fast Delivery" imageSrc="/truck.png" />
-        </div>
-      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Section5;
+export default Section5

@@ -1,25 +1,24 @@
 import React from "react";
 import Image from "next/image";
-
-const SmallCard = ({ imagesrc, title, description }: any) => {
+const SmallCard = ({imageSrc,name,price} : any) => {
   return (
-    <div className="flex w-[376px] h-[79px] border rounded-lg ml-[40px] mt-[50px] sm:w-[280px] sm:h-[100px] md:w-[320px] md:h-[120px] hover:shadow-lg transition-all duration-300">
+    <div className="w-[311px] h-[62px] flex items-center p-2 ">
       {/* Image Section */}
-      <div className="w-[79px] h-full">
-        <Image
-          src={imagesrc}
-          alt={title}
-          width={79}
-          height={79}
-          className="object-cover h-full w-full rounded-lg"
-        />
+      <Image
+      width={100}
+      height={100}
+        src={imageSrc}
+        alt={name}
+        className="w-[67px] h-[62px] object-cover rounded-md"
+      />
+
+      {/* Text Section */}
+      <div className="flex-1 ml-4">
+        <h1 className="text-gray-800 font-semibold text-base">{name}</h1>
       </div>
 
-      {/* Content Section */}
-      <div className="flex flex-col justify-center px-4">
-        <h3 className="text-md text-gray-800 font-semibold">{title}</h3>
-        <p className="text-sm text-gray-600">{description}</p>
-      </div>
+      {/* Price Section */}
+      <h2 className="text-gray-700 font-bold text-base">{price}</h2>
     </div>
   );
 };
