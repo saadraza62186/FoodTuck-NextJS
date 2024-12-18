@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Dropdown from "./DropDown";
+import Dropdown from "./Dropdown";
 import ShopItems from "./ShopItems";
 import Image from "next/image";
 import SearchIcon from "@mui/icons-material/Search";
